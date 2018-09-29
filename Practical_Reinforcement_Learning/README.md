@@ -1,0 +1,1 @@
+Slides: https://github.com/yandexdataschool/Practical_RL
