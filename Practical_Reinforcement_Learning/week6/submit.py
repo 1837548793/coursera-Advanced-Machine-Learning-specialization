@@ -4,12 +4,12 @@ sys.path.append("..")
 import grading
 
 
-def submit_bandits(scores, email, token):
+def submit_bandits(scores, agents, email, token):
     epsilon_greedy_agent = None
     ucb_agent = None
     thompson_sampling_agent = None
 
-    for agent in scores:
+    for agent in agents:
         if "EpsilonGreedyAgent" in agent.name:
             epsilon_greedy_agent = agent.name
         if "UCBAgent" in agent.name:
